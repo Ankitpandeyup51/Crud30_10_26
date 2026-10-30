@@ -1,0 +1,66 @@
+﻿@model System.Data.DataTable
+@{
+    ViewBag.Title = "UpdateStudent";
+    System.Data.DataRow row = null;
+    if (Model != null && Model.Rows.Count > 0)
+    {
+        row = Model.Rows[0];
+    }
+}
+
+<html>
+<head>
+    <title>Update   Registration</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        h2, .a {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Update Student Details</h2>
+
+    <form method="post">
+        @if (row != null)
+        {
+            <label class="form-label">Id:</label>
+            <input class="form-control" type="number" name="Id" value="@row["Id"]" readonly /> 
+
+            <label class="form-label">Name:</label>
+            <input class="form-control" type="text" name="name" value="@row["name"]" /> 
+
+            <label class="form-label">Phone:</label>
+            <input class="form-control" type="text" name="phone" value="@row["phone"]" /> 
+
+            <label class="form-label">Email:</label>
+            <input class="form-control" type="email" name="email" value="@row["email"]" /> 
+
+            <label class="form-label">DOB:</label>
+            <input class="form-control" type="date" name="dob" value="@(row["dob"] != DBNull.Value ? Convert.ToDateTime(row["dob"]).ToString("yyyy-MM-dd") : "")" /> 
+
+            <label class="form-label">Gender:</label><br />
+            <div class="mb-3">
+                <input class="form-check-input" type="radio" name="gender" value="Male" @(row["gender"].ToString() == "Male" ? "checked" : "") /> Male
+                <input class="form-check-input" type="radio" name="gender" value="Female" @(row["gender"].ToString() == "Female" ? "checked" : "") /> Female
+                <input class="form-check-input" type="radio" name="gender" value="Other" @(row["gender"].ToString() == "Other" ? "checked" : "") /> Other
+            </div>
+
+            <label class="form-label">Address:</label>
+            <input class="form-control" type="text" name="address" value="@row["address"]" placeholder="Enter Your Address" /> 
+
+            <label class="form-label">Password:</label>
+            <input class="form-control" type="password" name="password" value="@row["password"]" placeholder="Enter Your Password" /> 
+
+            <input class="btn btn-primary" type="submit" value="Update" />
+            <input class="btn btn-info" type="reset" value="Reset" />
+        }
+        else
+        {
+            <p class="text-danger">No student record found.</p>
+        }
+    </form>
+</body>
+</html>
+
