@@ -61,7 +61,7 @@ git clone https://github.com/Ankitpandeyup51/Crud30_10_26.git
 
 
 # Registration from
-=======================
+
 
 <img width="949" height="471" alt="Screenshot 2026-10-30 101751" src="https://github.com/user-attachments/assets/ec836405-5b19-442d-a5af-9d7ded6a609a" />
 
