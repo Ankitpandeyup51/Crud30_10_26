@@ -60,12 +60,14 @@ git clone https://github.com/Ankitpandeyup51/Crud30_10_26.git
 ⭐ If you like this project, please give it a Star!
 
 
-Registration from
+# Registration from
+=======================
 
 <img width="949" height="471" alt="Screenshot 2026-10-30 101751" src="https://github.com/user-attachments/assets/ec836405-5b19-442d-a5af-9d7ded6a609a" />
 
 
-Login From
+#Login From
+===============
 
 <img width="956" height="465" alt="Screenshot 2026-10-30 101848" src="https://github.com/user-attachments/assets/ca378dae-d127-4601-83a3-1f1d756fee13" />
 
@@ -73,7 +75,8 @@ Login From
 <img width="956" height="456" alt="Screenshot 2026-10-30 101934" src="https://github.com/user-attachments/assets/bdf8c4af-0882-4cfa-981b-b5e7b1e127f3" />
 
 
-Show Details
+#Show Details
+======================
 
 <img width="958" height="470" alt="Screenshot 2026-10-30 101959" src="https://github.com/user-attachments/assets/1139114e-7d80-4117-8b28-f463e03c6665" />
 
